@@ -19,9 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`w-full flex justify-center items-center ${geistSans.variable} ${geistMono.variable}`}
-      >
+      <body className={`w-full ${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>

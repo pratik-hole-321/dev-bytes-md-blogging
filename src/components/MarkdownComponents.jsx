@@ -45,9 +45,11 @@ const MarkdownComponents = {
   // Tables
   table({ children }) {
     return (
-      <table className="w-full border border-gray-300 border-collapse my-4">
-        {children}
-      </table>
+      <div className="overflow-x-auto my-4">
+        <table className="w-full table-auto border border-gray-300 border-collapse text-left">
+          {children}
+        </table>
+      </div>
     );
   },
   thead({ children }) {
